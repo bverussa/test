@@ -1,5 +1,5 @@
 [webserver]
-15.222.11.199
+aws1    ansible_host=15.222.11.199  ansible_user=ubuntu
 
 [prod:children]
 webserver
