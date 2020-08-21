@@ -1,0 +1,9 @@
+---
+- name: Deploy app
+  hosts: webserver
+  tasks:
+  - name: Install NGINX web server
+    packages:
+      name: nginx
+      state: present
+    become: yes
