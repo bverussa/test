@@ -2,6 +2,8 @@
 - name: Deploy app
   hosts: webserver
   become: yes
+  vars:
+    app_deploy_dest: /svr/app/
   tasks:
   - name: Install NGINX web server
     package:
